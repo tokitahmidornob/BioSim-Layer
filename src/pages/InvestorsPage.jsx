@@ -3,6 +3,7 @@ import SectionHeader from '../components/SectionHeader';
 import StatusBadge from '../components/StatusBadge';
 import DotMatrixMap from '../components/DotMatrixMap';
 import CTABand from '../components/CTABand';
+import SEO from '../components/SEO';
 import { siteConfig } from '../data/siteConfig';
 import { siteContent } from '../data/siteContent';
 import { DollarSign, ShieldAlert, CheckCircle2, TrendingUp, Clock, AlertTriangle, ArrowRight, Layers, ShieldCheck, Cpu } from 'lucide-react';
@@ -14,6 +15,13 @@ export default function InvestorsPage() {
 
   return (
     <div className="space-y-24 py-8 pb-20 max-w-[1200px] mx-auto px-4 sm:px-6">
+      <SEO
+        title="Investor Information | BioSimLayer | Toki Tahmid Ornob & Tabasum Aktar"
+        description="BioSimLayer investor thesis and staged $45K seed sprint. Founded by Toki Tahmid Ornob and Tabasum Aktar in Dhaka, Bangladesh."
+        keywords="BioSimLayer investors, Toki Tahmid Ornob, Tabasum Aktar, deep tech investment Bangladesh, biosimulation investment"
+        canonicalPath="/investors"
+      />
+
       {/* Hero Header */}
       <div className="text-center space-y-4 pt-6 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAF6FA] text-[#0E7490] text-xs font-mono font-semibold tracking-wide border border-[#CBD5E1]/60">

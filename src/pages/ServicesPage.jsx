@@ -12,6 +12,7 @@ import {
   PatentShieldArt 
 } from '../components/illustrations/ServiceArt';
 import { siteContent } from '../data/siteContent';
+import SEO from '../components/SEO';
 import { ArrowRight, Clock, Target, CheckCircle2, AlertCircle, Ban } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -29,6 +30,13 @@ export default function ServicesPage() {
 
   return (
     <div className="space-y-24 py-8 pb-20 max-w-[1200px] mx-auto px-4 sm:px-6">
+      <SEO
+        title="Commercial Services & Triage Studies | Toki Tahmid Ornob & Tabasum Aktar"
+        description="Fixed-scope decision studies (≤ 72h turnaround) and gated organ-module subscriptions for pharmaceutical teams. Founded by Toki Tahmid Ornob and Tabasum Aktar."
+        keywords="BioSimLayer services, candidate triage, impurity triage, bioequivalence risk triage, Toki Tahmid Ornob, Tabasum Aktar"
+        canonicalPath="/services"
+      />
+
       {/* Hero Header */}
       <div className="text-center space-y-4 pt-6 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAF6FA] text-[#0E7490] text-xs font-mono font-semibold tracking-wide border border-[#CBD5E1]/60">

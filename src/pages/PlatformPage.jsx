@@ -4,6 +4,7 @@ import StatusBadge from '../components/StatusBadge';
 import ScrollyLayerFlow from '../components/ScrollyLayerFlow';
 import DataOrbit from '../components/illustrations/DataOrbit';
 import CTABand from '../components/CTABand';
+import SEO from '../components/SEO';
 import { siteContent } from '../data/siteContent';
 import { Check, X, ShieldCheck, Database, Lock, Server, FileText } from 'lucide-react';
 
@@ -12,6 +13,13 @@ export default function PlatformPage() {
 
   return (
     <div className="space-y-24 py-8 pb-20 max-w-[1200px] mx-auto px-4 sm:px-6">
+      <SEO
+        title="Platform Architecture | 4-Layer PBPK Biosimulation | Toki Tahmid Ornob & Tabasum Aktar"
+        description="Four layers, one decision record: Provenance, Property/Transport Prediction, Mechanistic PBPK & Virtual Populations, and Regulatory Decision Dossier. Developed by Toki Tahmid Ornob and Tabasum Aktar."
+        keywords="BioSimLayer platform, 4 layer biosimulation, PBPK Dhaka, Toki Tahmid Ornob, Tabasum Aktar, BioFold engine, mechanistic PK"
+        canonicalPath="/platform"
+      />
+
       {/* Hero Header */}
       <div className="text-center space-y-4 pt-6 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAF6FA] text-[#0E7490] text-xs font-mono font-semibold tracking-wide border border-[#CBD5E1]/60">

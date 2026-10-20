@@ -1,4 +1,22 @@
+# BioSimLayer Robots Directives
+# Computational Pharmacology & PBPK Biosimulation Platform
+# Founders: Toki Tahmid Ornob & Tabasum Aktar
+# Location: Dhaka, Bangladesh
+
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Canonical XML Sitemap
+Sitemap: https://biosimlayer.com/sitemap.xml

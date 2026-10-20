@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SEO from '../components/SEO';
 import SectionHeader from '../components/SectionHeader';
 import { siteConfig } from '../data/siteConfig';
 import { Send, CheckCircle2, AlertCircle, Mail, MapPin, Sparkles } from 'lucide-react';
@@ -43,6 +44,21 @@ export default function ContactPage() {
 
   return (
     <div className="space-y-16 py-8 pb-20 max-w-[900px] mx-auto px-4 sm:px-6">
+      <SEO
+        title="Contact BioSimLayer | Dhaka R&D Hub | Toki Tahmid Ornob & Tabasum Aktar"
+        description="Contact BioSimLayer founders Toki Tahmid Ornob and Tabasum Aktar in Dhaka, Bangladesh. Request a commercial pilot, discuss research collaboration, or schedule an investor brief."
+        canonicalPath="/contact"
+        keywords={[
+          'Contact BioSimLayer',
+          'Toki Tahmid Ornob contact',
+          'Tabasum Aktar contact',
+          'BioSimLayer Dhaka office',
+          'computational pharmacology inquiry',
+          'Bangladesh biotech pilot inquiry',
+          'Toki Tahmid email'
+        ]}
+        schemaType="ContactPage"
+      />
       {/* Header */}
       <div className="text-center space-y-3 pt-6">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAF6FA] text-[#0E7490] text-xs font-mono font-semibold tracking-wide border border-[#CBD5E1]/60">

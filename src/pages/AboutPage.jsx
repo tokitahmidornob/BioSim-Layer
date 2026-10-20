@@ -2,19 +2,29 @@ import React from 'react';
 import SectionHeader from '../components/SectionHeader';
 import Avatar from '../components/Avatar';
 import CTABand from '../components/CTABand';
+import SEO from '../components/SEO';
 import { siteConfig } from '../data/siteConfig';
 import { siteContent } from '../data/siteContent';
-import { MapPin, Target, ShieldCheck, Heart, AlertTriangle, Compass, CheckCircle2 } from 'lucide-react';
+import { MapPin, Target, ShieldCheck, Heart, AlertTriangle, Compass, CheckCircle2, UserCheck } from 'lucide-react';
 
 export default function AboutPage() {
   const { headline, mission, founded, fialuridineInspiration, values } = siteContent.about;
 
   return (
     <div className="space-y-24 py-8 pb-20 max-w-[1200px] mx-auto px-4 sm:px-6">
+      {/* Route-Specific SEO for Founders and Company */}
+      <SEO
+        title="About BioSimLayer | Founders Toki Tahmid Ornob & Tabasum Aktar"
+        description="BioSimLayer was founded in Dhaka, Bangladesh by Toki Tahmid Ornob and Tabasum Aktar to build mechanistic PBPK biosimulation and computational safety decision support for pharmaceutical discovery."
+        keywords="Toki Tahmid Ornob, Tabasum Aktar, Toki Tahmid, Tabasum, BioSimLayer founders, BioSim Layer, BioFold, Dhaka biotech, PBPK biosimulation, computational pharmacology Bangladesh"
+        canonicalPath="/about"
+        schemaType="AboutPage"
+      />
+
       {/* Hero Header with Blueprint Accent */}
       <div className="text-center space-y-4 pt-6 max-w-3xl mx-auto relative">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAF6FA] text-[#0E7490] text-xs font-mono font-semibold tracking-wide border border-[#CBD5E1]/60">
-          <span>09 / Company & Mission</span>
+          <span>09 / Company & Leadership</span>
         </div>
         <h1 className="text-4xl sm:text-5xl font-extrabold text-[#0B1F3A] tracking-tight">
           {headline}
@@ -39,12 +49,12 @@ export default function AboutPage() {
         </p>
       </section>
 
-      {/* Founding Team Cards */}
-      <section className="space-y-8">
+      {/* Founding Team Cards (Toki Tahmid Ornob & Tabasum Aktar) */}
+      <section className="space-y-8" id="founders">
         <SectionHeader
-          eyebrow="Leadership"
+          eyebrow="Leadership & Founders"
           title="The Founding Team"
-          description="Combining software architecture with chemical and pharmacological computational sciences."
+          description="Founded in Dhaka by Toki Tahmid Ornob and Tabasum Aktar, combining advanced software engineering with pharmacological biosimulation."
           centered
         />
 
@@ -64,12 +74,17 @@ export default function AboutPage() {
                 </p>
                 <p className="text-xs text-[#64748B] max-w-sm pt-2 leading-relaxed">
                   {member.bio === 'TODO_CONFIRM' 
-                    ? 'Engineering & scientific leadership based in Dhaka, Bangladesh. Dedicated to advancing mechanistic in silico pharmacology.'
+                    ? `Co-founder of ${siteConfig.BRAND_NAME}, driving computational pharmacology and software architecture in Dhaka, Bangladesh.`
                     : member.bio}
                 </p>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Semantic Search Summary Bar */}
+        <div className="max-w-2xl mx-auto p-4 rounded-xl bg-slate-50 border border-slate-200/80 text-xs text-[#475569] text-center leading-relaxed">
+          <strong>BioSimLayer Leadership:</strong> Toki Tahmid Ornob and Tabasum Aktar established BioSimLayer to develop mechanistic in silico biosimulation tools for Bangladesh's graduating pharmaceutical sector and emerging global generic hubs.
         </div>
       </section>
 

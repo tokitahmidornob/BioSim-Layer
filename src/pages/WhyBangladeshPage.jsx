@@ -6,6 +6,7 @@ import DotMatrixMap from '../components/DotMatrixMap';
 import ImportDependenceBar from '../components/ImportDependenceBar';
 import StatusBadge from '../components/StatusBadge';
 import CTABand from '../components/CTABand';
+import SEO from '../components/SEO';
 import { siteContent } from '../data/siteContent';
 import { Building2, Compass, TrendingUp, ShieldAlert, ChevronDown, ChevronUp, Globe, FileText, ArrowRight, CheckCircle2 } from 'lucide-react';
 
@@ -15,6 +16,13 @@ export default function WhyBangladeshPage() {
 
   return (
     <div className="space-y-24 py-8 pb-20 max-w-[1200px] mx-auto px-4 sm:px-6">
+      <SEO
+        title="Why Bangladesh & TRIPS Transition | BioSimLayer | Toki Tahmid Ornob & Tabasum Aktar"
+        description="A $1.3B API import gap, impending WTO TRIPS transition, and new international regulatory tailwinds. Founded by Toki Tahmid Ornob and Tabasum Aktar in Dhaka."
+        keywords="Why Bangladesh pharma, TRIPS transition Bangladesh, Munshiganj API park, Toki Tahmid Ornob, Tabasum Aktar, BioSimLayer, biotech Bangladesh"
+        canonicalPath="/why-bangladesh"
+      />
+
       {/* Hero Header */}
       <div className="text-center space-y-4 pt-6 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAF6FA] text-[#0E7490] text-xs font-mono font-semibold tracking-wide border border-[#CBD5E1]/60">

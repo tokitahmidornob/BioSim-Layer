@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import SectionHeader from '../components/SectionHeader';
 import PricingCard from '../components/PricingCard';
 import PricingLadder from '../components/illustrations/PricingLadder';
@@ -12,6 +13,23 @@ export default function PricingPage() {
 
   return (
     <div className="space-y-24 py-8 pb-20 max-w-[1200px] mx-auto px-4 sm:px-6">
+      <SEO
+        title="Commercial Pricing & Pilot Engagement Model | BioSimLayer"
+        description="Transparent 3-stage commercial pricing for computational pharmacology pilots, retrospective validation benchmarks, and production licenses by BioSimLayer (Toki Tahmid Ornob & Tabasum Aktar)."
+        canonicalPath="/pricing"
+        keywords={[
+          'BioSimLayer pricing',
+          'computational pharmacology pilot cost',
+          'PBPK simulation licensing',
+          'retrospective validation benchmark cost',
+          'Toki Tahmid Ornob',
+          'Tabasum Aktar',
+          'BioSimLayer pilot tiers',
+          'biosimulation enterprise pricing',
+          'Dhaka biotech commercial model'
+        ]}
+      />
+
       {/* Hero Header */}
       <div className="text-center space-y-4 pt-6 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAF6FA] text-[#0E7490] text-xs font-mono font-semibold tracking-wide border border-[#CBD5E1]/60">

@@ -26,6 +26,7 @@ import ImportDependenceBar from '../components/ImportDependenceBar';
 import FAQAccordion from '../components/FAQAccordion';
 import CTABand from '../components/CTABand';
 import Avatar from '../components/Avatar';
+import SEO from '../components/SEO';
 import { siteConfig } from '../data/siteConfig';
 import { siteContent } from '../data/siteContent';
 
@@ -38,6 +39,14 @@ export default function HomePage() {
 
   return (
     <div className="space-y-24 lg:space-y-32 pb-24">
+      {/* Route-Specific SEO for Founders and Brand */}
+      <SEO
+        title="AI-Powered Biosimulation for Drug Discovery | Toki Tahmid Ornob & Tabasum Aktar"
+        description="BioSimLayer helps pharmaceutical teams decide which experiment to run next. Founded by Toki Tahmid Ornob and Tabasum Aktar in Dhaka, Bangladesh. Combining mechanistic PBPK biosimulation with uncertainty quantification."
+        keywords="Toki Tahmid Ornob, Tabasum Aktar, Toki Tahmid, Tabasum, BioSimLayer, BioSim Layer, BioFold, BioFold Engine, biosimulation Bangladesh, Dhaka biotech, PBPK Bangladesh, in silico ADMET Dhaka, drug discovery biosimulation"
+        canonicalPath="/"
+      />
+
       {/* 1. Hero Section with Blueprint Mesh & Floating Telemetry */}
       <section className="relative overflow-hidden pt-6 pb-12 lg:pt-12 lg:pb-16 bg-gradient-to-b from-[#EAF6FA]/50 via-white to-white">
         {/* Background Blueprint Grid Mask */}
