@@ -42,7 +42,7 @@ export default function HomePage() {
       {/* Route-Specific SEO for Founders and Brand */}
       <SEO
         title="AI-Powered Biosimulation for Drug Discovery | Toki Tahmid Ornob & Tabasum Aktar"
-        description="BioSimLayer helps pharmaceutical teams decide which experiment to run next. Founded by Toki Tahmid Ornob and Tabasum Aktar in Dhaka, Bangladesh. Combining mechanistic PBPK biosimulation with uncertainty quantification."
+        description="Understand the molecule. Simulate the biology. Guide the next experiment. BioSimLayer connects molecular intelligence, mechanistic pharmacokinetics, and human biosimulation."
         keywords="Toki Tahmid Ornob, Tabasum Aktar, Toki Tahmid, Tabasum, BioSimLayer, BioSim Layer, BioFold, BioFold Engine, biosimulation Bangladesh, Dhaka biotech, PBPK Bangladesh, in silico ADMET Dhaka, drug discovery biosimulation"
         canonicalPath="/"
       />
@@ -61,13 +61,20 @@ export default function HomePage() {
                 <span>{hero.eyebrow}</span>
               </div>
 
-              <h1 className="text-display font-extrabold text-[#0B1F3A] tracking-tight">
-                A world where <span className="text-gradient">no human</span> has to be the first test subject.
+              <h1 className="text-display font-extrabold text-[#0B1F3A] tracking-tight leading-tight">
+                Understand the molecule.{' '}
+                <span className="text-gradient block sm:inline">Simulate the biology.</span>{' '}
+                Guide the next experiment.
               </h1>
 
-              <p className="text-base sm:text-lg text-[#475569] leading-relaxed max-w-xl">
-                {hero.sub}
-              </p>
+              <div className="space-y-3 max-w-2xl">
+                <p className="text-base sm:text-lg text-[#475569] leading-relaxed">
+                  BioSimLayer is an AI-powered computational research platform connecting molecular intelligence, mechanistic pharmacokinetics, and human biosimulation—helping pharmaceutical teams investigate drug behavior, quantify uncertainty, and make informed decisions before costly wet-lab experiments.
+                </p>
+                <p className="text-xs sm:text-sm font-mono font-semibold text-[#0E7490] tracking-wide">
+                  Built in Bangladesh. Designed for global pharmaceutical research.
+                </p>
+              </div>
 
               {/* CTAs */}
               <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -118,7 +125,7 @@ export default function HomePage() {
       <section className="max-w-[1200px] mx-auto px-4 sm:px-6 space-y-10">
         <SectionHeader
           eyebrow="The Scientific Dilemma"
-          title="Drug development still makes people the first test."
+          title="Bridging the $2.6B preclinical translational gap."
           description="Conventional preclinical animal testing fails to capture species-specific human toxicities, leading to high-attrition clinical failures and wasted pharmaceutical capital."
           centered
         />
